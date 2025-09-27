@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectors</title>
+  <style>
+    /* Universal Selector */
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    div{
+      background-color: rgb(204, 161, 19);
+    }
+    .red{
+      background-color: rgb(238, 47, 9);
+    }
+    #green{
+      background-color: green;
+    }
+    div > h3{
+      background-color: blue;
+      color: white;
+    }
+    div p{
+      background-color: purple;
+      color: white;
+    }
+
+   
+
+    a:visited{
+      color: red;
+    }
+
+    a:link{
+      color: green;
+    }
+    a:hover{
+      color: orange;
+    }
+    a:active{
+      color: rgb(255, 0, 217);
+    }
+
+    P:first-child{
+      background-color: rgb(40, 252, 185);
+      color: rgb(5, 21, 197);
+    }
+
+    p:nth-child(2){
+      background-color: yellow;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Element Selector -->
+  <div>
+    I am a div
+  </div>
+
+  <!-- Class Selector -->
+  <div class="red">
+    I am another div
+  </div>
+
+  <!-- ID Selector -->
+  <div id="green">
+    I am a green div
+  </div>
+
+  <!-- Child Selector -->
+  <div>
+    <h3>I am a child heading</h3>
+  </div>
+  
+  <!-- Descendant Selector -->
+  <div>
+    <section>
+      <p>I am a descendant paragraph</p>
+    </section>
+  </div>
+
+  <a href="https://www.example3.com" target="_blank">I am a link</a>
+
+
+  <div class="selector">
+    <p>I am a first paragraph</p>
+    <p>I am a second paragraph</p>
+  </div>
+</body>
+</html>
