@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow property</title>
+    <style>
+      .box1 {
+        margin: 30px;
+        border: 2px solid black;
+        width: 30vw;
+        height: 5vh;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        
+      }
+
+      .box2 {
+        margin: 30px;
+        border: 2px solid black;
+        width: 30vw;
+        height: 5vh;
+        overflow: auto;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+      }
+
+      .box3 {
+        margin: 30px;
+        border: 2px solid black;
+        width: 30vw;
+        height: 5vh;
+        overflow: auto;
+        white-space: nowrap;
+        text-overflow: clip;
+      }
+
+
+      .box4 {
+        margin: 30px;
+        border: 2px solid black;
+        width: 30vw;
+        height: 5vh;
+        overflow: hidden auto;
+        /* white-space: nowrap; */
+        /* text-overflow: ellipsis; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+    </div>
+    <div class="box2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui atque
+    </div>
+    <div class="box3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+    </div>
+    <div class="box4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui atque
+    </div>
+  </body>
+</html>
