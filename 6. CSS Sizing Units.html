@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 12px;
+      }
+      .box {
+        border: 2px solid black;
+        background-color: aquamarine;
+        /* width: 233px; */
+        /* width: 1533px; */
+        width: 80vw;
+        margin: 0 auto;
+        /* Only possible in case of block level element */
+        box-sizing: border-box;
+      }
+      .container {
+        border: 2px solid black;
+        background-color: aquamarine;
+        width: 80vw;
+        /* height: 80vh; */
+        min-height: 60vh;
+        margin: 23px auto;
+        box-sizing: border-box;
+        /* font-size: 18px; */
+      }
+
+      .container div {
+        font-size: 1.5rem;
+        width: 50%;
+        border: 2px solid red;
+      }
+
+      .container div div {
+        font-size: 1.2rem;
+        border: 2px solid blue;
+        width: 50%;
+      }
+
+      .mycont {
+        background-color: red;
+        color: yellow;
+        font-size: 22px;
+        /* width: 100vmin; */
+        width: 80vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is a box</div>
+    <div class="container">
+      <div>
+        lorem999 Expand to see that this container will adjust its height
+        according to the content inside it. Lorem ipsum dolor sit amet Lorem
+        ipsum dolor, sit amet consectetur adipisicing elit. Sapiente delectus
+        dolorum neque. Magnam rem dolor ex dolores debitis possimus quas
+        officiis, repellat cupiditate molestiae necessitatibus reiciendis
+        numquam, neque a deleniti sint magni enim at sapiente non? Impedit
+        laudantium reiciendis repellendus perspiciatis vero iusto, in totam
+        culpa, itaque commodi esse aspernatur?
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          blanditiis iste adipisci eligendi animi non vero ratione eius impedit
+          quisquam.
+        </div>
+      </div>
+    </div>
+    <div class="mycont">This is my container</div>
+  </body>
+</html>
