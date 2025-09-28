@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Position Property</title>
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .parents{
+      border: 2px solid blue;
+      padding: 30px;
+      margin: 20px;
+    }
+    .box{
+      width: 80vw;
+      height: 113px;
+      padding: 3px;
+      border: 2px solid black;
+      margin: 3px;
+    }
+    .box1{
+      background-color: rgb(12, 39, 243);
+      position: sticky;
+      top: 0px;
+    }
+    .box2{
+      background-color: aqua;
+      /* position: absolute;
+      top: 100px;
+      left: 30px; */
+      
+      /* position: relative;
+      top: 100px;
+      left: 40px; */
+    }
+    .box3{
+      background-color: aquamarine;
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      position: fixed;
+      bottom: 50px;
+      left: 8vw;
+    }
+
+
+    .idle{
+      height:90vh;
+      width: 50vw;
+      border: 2px solid rgb(202, 66, 66);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parents">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>  
+     <div class="idle"></div>
+  </div>
+  
+</body>
+</html>
