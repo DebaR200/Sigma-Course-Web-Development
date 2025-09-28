@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More on CSS Selector</title>
+  <style>
+
+    /* Child Ones */
+    .box:first-child{
+      background-color: red;
+    }
+     .box::first-line{
+      color: yellow;
+    }
+    .box::first-letter{
+      color: blue;
+      font-size:larger ;
+    }
+
+  /* Additional Property */
+    .boxes *{
+      background-color: lightgreen;
+    } 
+
+    [data_color='primary']{
+      background-color: purple;
+      color: white;
+    }
+
+
+    /* Nth Child */
+    .box:nth-child(even){
+      background-color: lightcoral;
+    }
+
+    .box:nth-last-child(2)  {
+      background-color: lightblue;
+    }
+
+/* Before, After, Selection, Plaaceholder  */
+    .boxes::before{
+      content: "This is a container";
+    }
+
+    .boxes::after{
+      content: "Good Bye";
+    }
+
+    ::selection{
+      background-color: black;
+      color: white;
+    }
+
+    
+    input::placeholder{
+      color: red;
+      font-size: larger;
+    }
+  </style>
+</head>
+<body>
+  <div class="boxes">
+    <div class="box" data_color='primary'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora earum, ut dolores doloremque blanditiis itaque tempore quaerat quae magnam, beatae, similique enim laudantium animi recusandae non unde placeat ipsam omnis. Iusto, assumenda maiores perferendis eum modi temporibus quisquam ab et animi, illo error veniam culpa tenetur quasi in. Obcaecati, adipisci?</div>
+    <div class="box">This is box2</div>
+    <div class="box">This is box3</div>
+    <div class="box">This is box4</div>
+
+  </div>
+  <input type="text" placeholder="Type something...">
+</body>
+</html>
