@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Shadow and Outline</title>
+  <style>
+  .box{
+    border: 2px solid black;
+    padding: 34px;
+    box-shadow: 15px 10px 7px 0px grey;
+    /* hoffset voffset blur color */
+  }
+  .text-shadow{
+    font-size: 40px;
+    text-shadow: 4px 2px 6px rgb(127, 0, 206);
+    
+    /* hoffset voffset blur color */
+    outline: 2px solid red;
+    outline-offset: 1px;
+    border: 2px solid blue;
+    border-radius: 10px; 
+    /* outline-offset is the space between border and outline */
+    /* border is the space between outline and content */
+  }
+  </style>
+</head>
+<body>
+  <div class="box">
+    I am a box
+  </div>
+  <p class="text-shadow">
+    Debashis
+  </p>
+</body>
+</html>
