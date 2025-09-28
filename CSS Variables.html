@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root{
+      --color:blue;
+      --secolor:red;
+      --depad:24px;
+      --deop:0.5
+    }
+    .nav{
+      background-color: var(--color);
+    }
+    ul{
+      list-style: none;
+      display: flex;
+    }
+    ul li{
+      
+      padding: var(--depad);
+      opacity: var(--deop);
+      border-right: 1px solid #fff;
+    }
+
+    ul li:last-child{
+      background-color: var(--secolor);
+    }
+    .container{
+      --secolor:red;
+      --color:yellow;
+      color: var(--secolor);
+      background-color: var(--color);
+      padding: var(--depad);
+    }
+  </style>
+
+</head>
+<body>
+  <div class="nav">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1>This is heading</h1>
+    <p>This is paragraph</p>
+  </div>
+</body>
+</html>
